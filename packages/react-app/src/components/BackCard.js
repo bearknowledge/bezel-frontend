@@ -7,6 +7,7 @@ const BackCard = ({ handleClick, position }) => {
   return (
     <div
       style={{
+        position: "relative",
         margin: 10,
         padding: 15,
         width: 300,
@@ -63,6 +64,24 @@ const BackCard = ({ handleClick, position }) => {
           type="text"
         />
       </div>
+      <button
+        style={{
+          border: "none",
+          padding: "10px 20px",
+          background: position === "up" ? "#064624" : "#5c111c",
+          color: "#F1F1F1",
+          fontSize: 19,
+          cursor: "pointer",
+          borderRadius: 5,
+          position: "absolute",
+          left: 10,
+          right: 10,
+          bottom: 10,
+        }}
+        onClick={() => console.log("submit")}
+      >
+        Submit
+      </button>
     </div>
   );
 };
