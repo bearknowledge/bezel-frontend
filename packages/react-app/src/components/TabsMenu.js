@@ -12,7 +12,7 @@ const useStyles = makeStyles({
 });
 
 const TabsMenu = () => {
-  const [value, setValue] = React.useState(1);
+  const [value, setValue] = React.useState(0);
 
   const classes = useStyles();
 
@@ -23,7 +23,7 @@ const TabsMenu = () => {
   return (
     <Tabs value={value} onChange={handleChange} aria-label="tabs menu">
       <Tab className={classes.tab} disableRipple label="Markets" />
-      <Tab className={classes.tab} disableRipple label="Portfolio" />
+      <Tab className={classes.tab} disableRipple label="Portfolio" disabled />
     </Tabs>
   );
 };

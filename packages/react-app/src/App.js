@@ -44,7 +44,7 @@ const App = () => {
         <TabsMenu />
 
         <div>
-          <h3 style={{ color: "#232323" }}>
+          <h3 style={{ color: "#232323", textAlign: "center" }}>
             *All markets are resolved after 24hrs*
           </h3>
           <div
