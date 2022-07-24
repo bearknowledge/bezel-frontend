@@ -10,7 +10,7 @@ const BackCard = ({ handleClick, position }) => {
         margin: 10,
         padding: 15,
         width: 300,
-        height: 400,
+        height: "inherit",
         background:
           position === "up"
             ? "#1bc11b"

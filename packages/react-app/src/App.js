@@ -9,6 +9,7 @@ import FlipCard from "./components/FlipCard";
 import { sneaker } from "./data/sneaker";
 import { sneaker2 } from "./data/sneaker2";
 import { sneaker3 } from "./data/sneaker3";
+import AppLogo from "../src/assets/BezelLogo.jpg";
 
 const { chains, provider } = configureChains(
   [chain.mainnet, chain.polygon, chain.optimism, chain.arbitrum],
@@ -38,7 +39,7 @@ const App = () => {
             padding: 10,
           }}
         >
-          <h1>Bezel</h1>
+          <img style={{ width: "15%" }} src={AppLogo} alt="Bezel App" />
           <WalletButton />
         </div>
         <TabsMenu />
