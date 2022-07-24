@@ -8,7 +8,7 @@ const BackCard = ({ handleClick, position }) => {
     <div
       style={{
         margin: 10,
-        padding: 10,
+        padding: 15,
         width: 300,
         height: 400,
         background:

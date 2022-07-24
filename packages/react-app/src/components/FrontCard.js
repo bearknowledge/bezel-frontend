@@ -7,12 +7,13 @@ const FrontCard = ({ handleClick, sneaker }) => {
     <div
       style={{
         margin: 10,
-        padding: 10,
+        padding: 15,
         width: 300,
         height: 400,
-        background: "#232323",
+        background: "#7a7a7a",
         borderRadius: 10,
         cursor: "pointer",
+        position: "relative",
       }}
     >
       <button
@@ -59,6 +60,9 @@ const FrontCard = ({ handleClick, sneaker }) => {
           cursor: "pointer",
           borderRadius: 5,
           width: "100%",
+          position: "absolute",
+          right: 0,
+          bottom: 10,
         }}
         onClick={(e) => handleClick("down")}
       >
