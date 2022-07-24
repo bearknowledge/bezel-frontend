@@ -13,6 +13,7 @@ export const sneaker2 = {
       releaseDate: "2021-03-10",
       retailPrice: 110,
       estimatedMarketValue: 143,
+      market: "Average resell price >  $150",
       story:
         "The Nike Dunk Low ‘Black White’ also known as &#39;Panda&#39; treats the retro model to an essential two-tone color scheme that accentuates the sneaker’s clean lines, developed by designer Peter Moore and responsible for the shoe’s easy transition from the hardwood to the street. The leather upper combines a white base with contrasting black overlays that wrap around the toe and heel. On both the woven tongue tag and heel tab, Nike branding in white stands out in relief against a black backdrop.",
       image: {

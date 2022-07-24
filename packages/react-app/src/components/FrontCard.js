@@ -30,14 +30,18 @@ const FrontCard = ({ handleClick, sneaker }) => {
         }}
         onClick={(e) => handleClick("up")}
       >
-        Up
+        True
       </button>
       <h3
-        style={{ fontFamily: "monospace", fontSize: 21, color: "antiquewhite" }}
+        style={{ fontFamily: "monospace", fontSize: 19, color: "white" }}
       >
-        {shoe.name}
+        {shoe.market}
       </h3>
-      <h3 style={{ color: "antiquewhite" }}>${shoe.estimatedMarketValue}</h3>
+      <h3 style={{ color: "antiquewhite", fontFamily: "monospace", fontSize: 16,}}>
+      {shoe.name}
+      </h3>
+      
+      <h3 style={{ color: "antiquewhite", fontFamily: "monospace" }}>${shoe.estimatedMarketValue}</h3>
       <img
         style={{
           width: "100%",
@@ -66,7 +70,7 @@ const FrontCard = ({ handleClick, sneaker }) => {
         }}
         onClick={(e) => handleClick("down")}
       >
-        Down
+        False
       </button>
     </div>
   );
