@@ -13,6 +13,7 @@ export const sneaker3 = {
       releaseDate: "2022-03-05",
       retailPrice: 230,
       estimatedMarketValue: 229,
+      market: "Average resell price > $230",
       story:
         "The adidas Yeezy Boost 350 V2 ‘Onyx’ applies a stealthy palette to the lifestyle silhouette that merges Kanye West’s visionary aesthetic with adidas’ performance technology. The sneaker makes use of a one-note black Primeknit upper, secured with rope laces and equipped with a pull tab at the heel. On the lateral side, a post-dyed monofilament stripe adds a see-through element to the sock-like build. A full-length Boost midsole is surrounded by a ribbed, semi-translucent TPU cage that maintains the shoe’s monochrome design.",
       image: {

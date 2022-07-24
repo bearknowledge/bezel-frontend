@@ -13,6 +13,7 @@ export const sneaker = {
       releaseDate: "2022-07-21",
       retailPrice: 150,
       estimatedMarketValue: 1245,
+      market: "Average resell price > $1260",
       story:
         "The Travis Scott x Air Jordan 1 Low OG ‘Reverse Mocha’ delivers a twist on the original ‘Mocha’ AJ1 Low from 2019. The upper combines a brown suede base with ivory leather overlays and the Houston rapper’s signature reverse Swoosh on the lateral side, featuring oversized dimensions and a neutral cream finish. Contrasting scarlet accents distinguish a pair of woven Nike Air tongue tags, as well as mismatched Cactus Jack and retro Wings logos embroidered on each heel tab. A vintage off-white rubber midsole is bolstered with encapsulated Nike Air cushioning in the heel and a brown rubber outsole underfoot.",
       image: {
