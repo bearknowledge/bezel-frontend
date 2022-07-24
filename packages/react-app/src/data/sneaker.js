@@ -1,0 +1,75 @@
+export const sneaker = {
+  count: 1,
+  results: [
+    {
+      id: "295991f2-45f4-440f-b2f0-0cf83d20efa3",
+      sku: "DM7866-162",
+      brand: "Jordan",
+      name: "Jordan 1 Retro Low OG SP Travis Scott Reverse Mocha",
+      colorway: "Sail/University Red-Ridgerock",
+      gender: "men",
+      silhouette: "Air Jordan 1",
+      releaseYear: "2022",
+      releaseDate: "2022-07-21",
+      retailPrice: 150,
+      estimatedMarketValue: 1245,
+      story:
+        "The Travis Scott x Air Jordan 1 Low OG ‘Reverse Mocha’ delivers a twist on the original ‘Mocha’ AJ1 Low from 2019. The upper combines a brown suede base with ivory leather overlays and the Houston rapper’s signature reverse Swoosh on the lateral side, featuring oversized dimensions and a neutral cream finish. Contrasting scarlet accents distinguish a pair of woven Nike Air tongue tags, as well as mismatched Cactus Jack and retro Wings logos embroidered on each heel tab. A vintage off-white rubber midsole is bolstered with encapsulated Nike Air cushioning in the heel and a brown rubber outsole underfoot.",
+      image: {
+        "360": [
+          "https://images.stockx.com/360/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Images/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Lv2/img01.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1657606002",
+          "https://images.stockx.com/360/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Images/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Lv2/img02.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1657606002",
+          "https://images.stockx.com/360/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Images/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Lv2/img03.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1657606002",
+          "https://images.stockx.com/360/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Images/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Lv2/img04.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1657606002",
+          "https://images.stockx.com/360/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Images/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Lv2/img05.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1657606002",
+          "https://images.stockx.com/360/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Images/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Lv2/img06.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1657606002",
+          "https://images.stockx.com/360/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Images/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Lv2/img07.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1657606002",
+          "https://images.stockx.com/360/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Images/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Lv2/img08.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1657606002",
+          "https://images.stockx.com/360/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Images/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Lv2/img09.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1657606002",
+          "https://images.stockx.com/360/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Images/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Lv2/img10.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1657606002",
+          "https://images.stockx.com/360/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Images/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Lv2/img11.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1657606002",
+          "https://images.stockx.com/360/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Images/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Lv2/img12.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1657606002",
+          "https://images.stockx.com/360/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Images/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Lv2/img13.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1657606002",
+          "https://images.stockx.com/360/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Images/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Lv2/img14.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1657606002",
+          "https://images.stockx.com/360/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Images/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Lv2/img15.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1657606002",
+          "https://images.stockx.com/360/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Images/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Lv2/img16.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1657606002",
+          "https://images.stockx.com/360/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Images/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Lv2/img17.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1657606002",
+          "https://images.stockx.com/360/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Images/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Lv2/img18.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1657606002",
+          "https://images.stockx.com/360/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Images/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Lv2/img19.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1657606002",
+          "https://images.stockx.com/360/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Images/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Lv2/img20.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1657606002",
+          "https://images.stockx.com/360/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Images/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Lv2/img21.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1657606002",
+          "https://images.stockx.com/360/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Images/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Lv2/img22.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1657606002",
+          "https://images.stockx.com/360/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Images/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Lv2/img23.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1657606002",
+          "https://images.stockx.com/360/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Images/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Lv2/img24.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1657606002",
+          "https://images.stockx.com/360/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Images/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Lv2/img25.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1657606002",
+          "https://images.stockx.com/360/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Images/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Lv2/img26.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1657606002",
+          "https://images.stockx.com/360/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Images/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Lv2/img27.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1657606002",
+          "https://images.stockx.com/360/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Images/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Lv2/img28.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1657606002",
+          "https://images.stockx.com/360/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Images/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Lv2/img29.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1657606002",
+          "https://images.stockx.com/360/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Images/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Lv2/img30.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1657606002",
+          "https://images.stockx.com/360/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Images/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Lv2/img31.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1657606002",
+          "https://images.stockx.com/360/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Images/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Lv2/img32.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1657606002",
+          "https://images.stockx.com/360/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Images/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Lv2/img33.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1657606002",
+          "https://images.stockx.com/360/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Images/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Lv2/img34.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1657606002",
+          "https://images.stockx.com/360/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Images/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Lv2/img35.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1657606002",
+          "https://images.stockx.com/360/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Images/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha/Lv2/img36.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1657606002",
+        ],
+        original:
+          "https://image.goat.com/attachments/product_template_pictures/images/075/326/086/original/854208_00.png.png",
+        small:
+          "https://image.goat.com/750/attachments/product_template_pictures/images/075/326/086/original/854208_00.png.png",
+        thumbnail:
+          "https://image.goat.com/375/attachments/product_template_pictures/images/075/326/086/original/854208_00.png.png",
+      },
+      links: {
+        stockX:
+          "https://stockx.com/air-jordan-1-retro-low-og-sp-travis-scott-reverse-mocha",
+        goat:
+          "https://goat.com/sneakers/travis-scott-x-air-jordan-1-low-og-reverse-mocha-dm7866-162",
+        flightClub:
+          "https://flightclub.com/travis-scott-x-air-jordan-1-low-og-reverse-mocha-dm7866-162",
+        stadiumGoods: "",
+      },
+    },
+  ],
+};

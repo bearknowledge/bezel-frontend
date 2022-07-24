@@ -1,91 +1,66 @@
-import { useQuery } from "@apollo/client";
-import { Contract } from "@ethersproject/contracts";
-import { shortenAddress, useCall, useEthers, useLookupAddress } from "@usedapp/core";
-import React, { useEffect, useState } from "react";
+import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";
+import { chain, configureChains, createClient, WagmiConfig } from "wagmi";
+import { alchemyProvider } from "wagmi/providers/alchemy";
+import { publicProvider } from "wagmi/providers/public";
+import TabsMenu from "./components/TabsMenu";
+import "@rainbow-me/rainbowkit/dist/index.css";
+import WalletButton from "./components/WalletButton";
+import FlipCard from "./components/FlipCard";
+import { sneaker } from "./data/sneaker";
+import { sneaker2 } from "./data/sneaker2";
+import { sneaker3 } from "./data/sneaker3";
 
-import { Body, Button, Container, Header, Image, Link } from "./components";
-import logo from "./ethereumLogo.png";
+const { chains, provider } = configureChains(
+  [chain.mainnet, chain.polygon, chain.optimism, chain.arbitrum],
+  [alchemyProvider({ alchemyId: process.env.ALCHEMY_ID }), publicProvider()]
+);
 
-import { addresses, abis } from "@my-app/contracts";
-import GET_TRANSFERS from "./graphql/subgraph";
+const { connectors } = getDefaultWallets({
+  appName: "My RainbowKit App",
+  chains,
+});
 
-function WalletButton() {
-  const [rendered, setRendered] = useState("");
+const wagmiClient = createClient({
+  autoConnect: true,
+  connectors,
+  provider,
+});
 
-  const ens = useLookupAddress();
-  const { account, activateBrowserWallet, deactivate, error } = useEthers();
-
-  useEffect(() => {
-    if (ens) {
-      setRendered(ens);
-    } else if (account) {
-      setRendered(shortenAddress(account));
-    } else {
-      setRendered("");
-    }
-  }, [account, ens, setRendered]);
-
-  useEffect(() => {
-    if (error) {
-      console.error("Error while connecting wallet:", error.message);
-    }
-  }, [error]);
-
+const App = () => {
   return (
-    <Button
-      onClick={() => {
-        if (!account) {
-          activateBrowserWallet();
-        } else {
-          deactivate();
-        }
-      }}
-    >
-      {rendered === "" && "Connect Wallet"}
-      {rendered !== "" && rendered}
-    </Button>
+    <WagmiConfig client={wagmiClient}>
+      <RainbowKitProvider chains={chains}>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            padding: 10,
+          }}
+        >
+          <h1>Bezel</h1>
+          <WalletButton />
+        </div>
+        <TabsMenu />
+
+        <div>
+          <h3 style={{ color: "#232323" }}>
+            *All markets are resolved after 24hrs*
+          </h3>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            <FlipCard sneaker={sneaker} />
+            <FlipCard sneaker={sneaker2} />
+            <FlipCard sneaker={sneaker3} />
+          </div>
+        </div>
+      </RainbowKitProvider>
+    </WagmiConfig>
   );
-}
-
-function App() {
-  // Read more about useDapp on https://usedapp.io/
-  const { error: contractCallError, value: tokenBalance } =
-    useCall({
-       contract: new Contract(addresses.ceaErc20, abis.erc20),
-       method: "balanceOf",
-       args: ["0x3f8CB69d9c0ED01923F11c829BaE4D9a4CB6c82C"],
-    }) ?? {};
-
-  const { loading, error: subgraphQueryError, data } = useQuery(GET_TRANSFERS);
-
-  useEffect(() => {
-    if (subgraphQueryError) {
-      console.error("Error while querying subgraph:", subgraphQueryError.message);
-      return;
-    }
-    if (!loading && data && data.transfers) {
-      console.log({ transfers: data.transfers });
-    }
-  }, [loading, subgraphQueryError, data]);
-
-  return (
-    <Container>
-      <Header>
-        <WalletButton />
-      </Header>
-      <Body>
-        <Image src={logo} alt="ethereum-logo" />
-        <p>
-          Edit <code>packages/react-app/src/App.js</code> and save to reload.
-        </p>
-        <Link href="https://reactjs.org">
-          Learn React
-        </Link>
-        <Link href="https://usedapp.io/">Learn useDapp</Link>
-        <Link href="https://thegraph.com/docs/quick-start">Learn The Graph</Link>
-      </Body>
-    </Container>
-  );
-}
+};
 
 export default App;
