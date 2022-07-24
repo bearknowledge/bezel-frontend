@@ -9,7 +9,7 @@ const FrontCard = ({ handleClick, sneaker }) => {
         margin: 10,
         padding: 15,
         width: 300,
-        height: 400,
+        height: "inherit",
         background: "#7a7a7a",
         borderRadius: 10,
         cursor: "pointer",
@@ -59,9 +59,9 @@ const FrontCard = ({ handleClick, sneaker }) => {
           fontSize: 19,
           cursor: "pointer",
           borderRadius: 5,
-          width: "100%",
           position: "absolute",
-          right: 0,
+          left: 10,
+          right: 10,
           bottom: 10,
         }}
         onClick={(e) => handleClick("down")}
