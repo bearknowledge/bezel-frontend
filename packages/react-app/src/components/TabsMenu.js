@@ -4,6 +4,7 @@ import Tab from "@mui/material/Tab";
 import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles({
+  tabs:{ marginTop:'50px', marginLeft:'20px'},
   tab: {
     "&.MuiTab-textColorPrimary": {
       color: "#F1F1F1",
@@ -21,7 +22,7 @@ const TabsMenu = () => {
   };
 
   return (
-    <Tabs value={value} onChange={handleChange} aria-label="tabs menu">
+    <Tabs className={classes.tabs} value={value} onChange={handleChange} aria-label="tabs menu">
       <Tab className={classes.tab} disableRipple label="Markets" />
       <Tab className={classes.tab} disableRipple label="Portfolio" disabled />
     </Tabs>
