@@ -3,14 +3,13 @@ import { chain, configureChains, createClient, WagmiConfig } from "wagmi";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
 import TabsMenu from "./components/TabsMenu";
+import Sidebar from "./components/Sidebar"
 import Carousel from "./components/Carousel";
 import "@rainbow-me/rainbowkit/dist/index.css";
-import WalletButton from "./components/WalletButton";
 import FlipCard from "./components/FlipCard";
 import { sneaker } from "./data/sneaker";
 import { sneaker2 } from "./data/sneaker2";
 import { sneaker3 } from "./data/sneaker3";
-import AppLogo from "../src/assets/BezelLogo.jpg";
 
 const { chains, provider } = configureChains(
   [chain.mainnet, chain.polygon, chain.optimism, chain.arbitrum],
@@ -57,19 +56,21 @@ const slides = [
 ];
 
 const containerStyles = {
-  width: "1000px",
-  height: "500px",
-  margin: "0 auto",
+  width: "80%",
+  height: "400px",
+  margin: "auto",
+  marginTop:'80px'
 };
 
 const App = () => {
   return (
     <div
       style={{
-        backgroundImage: "linear-gradient(to top, #c1dfc4 0%, #deecdd 100%)",
+        backgroundColor:'#bdbdbd',
         overflow: "scroll",
       }}
     >
+      <Sidebar/>
       <WagmiConfig client={wagmiClient}>
         <RainbowKitProvider chains={chains}>
           <div
@@ -80,12 +81,7 @@ const App = () => {
               padding: 10,
             }}
           >
-            <img style={{ width: "15%" }} src={AppLogo} alt="Bezel App" />
-            <WalletButton />
           </div>
-          <h2 style={{ textAlign: "center", margin: "20px" }}>
-            Read the latest stories on all things kick related{" "}
-          </h2>
           <div style={containerStyles}>
             <Carousel slides={slides} />
           </div>

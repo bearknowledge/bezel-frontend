@@ -5,11 +5,11 @@ const WalletButton = () => {
     <div
       style={
         {
-          // width: "100vw",
-          // height: "100vh",
-          // display: "flex",
-          // alignItems: "center",
-          // justifyContent: "center",
+          width: "50px",
+          height: "25px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
         }
       }
     >

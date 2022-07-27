@@ -31,7 +31,7 @@ const Carousel = ({slides}) => {
   const rightArrowStyles = {
     position: 'absolute',
     top:'50%',
-    transform:'translate(1000px, -50%)',
+    transform:'translate(1125px, -50%)',
     left:'32px',
     fontSize: '60px',
     color: '#000',
